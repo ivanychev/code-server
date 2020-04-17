@@ -31,7 +31,6 @@ RUN echo "eval \"\$(pyenv virtualenv-init -)\"" >> .bashrc
 RUN PYTHON_CONFIGURE_OPTS="--enable-shared --enable-optimizations --with-computed-gotos --with-lto --enable-ipv6" .pyenv/bin/pyenv install 3.8.2 -v
 RUN .pyenv/versions/3.8.2/bin/pip install -U \
     pip numpy Pillow scipy sklearn matplotlib \
-    pandas requests tqdm nltk toolz scikit-image ipython \
-    torch torchvision tensorflow
+    pandas requests tqdm nltk toolz scikit-image ipython 
 RUN code-server --install-extension ms-python.python
 RUN code-server --install-extension ms-vscode.cpptools
