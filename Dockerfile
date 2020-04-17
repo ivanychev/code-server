@@ -32,6 +32,6 @@ RUN PYTHON_CONFIGURE_OPTS="--enable-shared --enable-optimizations --with-compute
 RUN .pyenv/versions/3.8.2/bin/pip install -U \
     pip numpy Pillow scipy sklearn matplotlib \
     pandas requests tqdm nltk toolz scikit-image ipython \
-    pytorch torchvision tensorflow
+    torch torchvision tensorflow
 RUN code-server --install-extension ms-python.python
 RUN code-server --install-extension ms-vscode.cpptools
